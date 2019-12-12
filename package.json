@@ -1,0 +1,12 @@
+{
+    "name": "vp-blog",
+    "version": "1.0.0",
+    "description": "vue-press blog",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vuepress dev docs",
+        "build": "vuepress build docs"
+    },
+    "author": "",
+    "license": "ISC"
+}
