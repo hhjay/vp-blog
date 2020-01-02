@@ -4,7 +4,9 @@ heroImage: https://cn.vuejs.org/images/logo.png
 heroText: Blog
 tagline: 记录心情，记录自己
 actionText: 心得 →
-actionLink: /more/
+actionLink: /daily/
+sidebarDepth: 2
+displayAllHeaders: true
 features:
 - title: 学习
   details: 我也不知道写什么好，更多的是自己的记录文档
