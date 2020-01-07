@@ -2,7 +2,14 @@ module.exports = {
     title: 'Ray1024',
     description: 'Just playing around',
     base: '/',
-    dest: 'public',
+    // dest: 'public',
+    head: [
+        ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ],
+    markdown: {
+        lineNumbers: false
+    },
+    dest: 'dist',
     configureWebpack: {
         resolve: {
             alias: {
@@ -11,6 +18,9 @@ module.exports = {
         }
     },
     themeConfig: {
+        sidebarDepth: 2,
+        lastUpdated: 'Last Updated',
+
         nav: [
             { text: '学习', link: '/learn/' },
             { text: '工作', link: '/work/' },
@@ -25,26 +35,50 @@ module.exports = {
             }
         ],
         displayAllHeaders: true,
-        sidebar: 'auto',
-        // sidebar: [
-        //     {
-        //         title: 'Group 1',   // 必要的
-        //         path: '/foo/',      // 可选的, 应该是一个绝对路径
-        //         collapsable: true, // 可选的, 默认值是 true,
-        //         sidebarDepth: 2,    // 可选的, 默认值是 1
-        //         children: [
-        //             '/'
-        //         ]
-        //     },
-        //     {
-        //         title: 'Group 333',
-        //         path: '/foo/',
-        //         collapsable: false,
-        //         sidebarDepth: 1,
-        //         children: [
-        //             '/'
-        //         ]
-        //     },
-        // ]
+        // sidebar: 'auto',
+
+        sidebar: [
+            {
+                title: '-学习-',
+                collapsable: false,
+                sidebarDepth: 2,
+                children: [
+                    '/learn/',
+                    '/learn/http-link.md',
+                    '/learn/http-nginx.md',
+                    '/learn/js-webpack-splitChunks.md',
+                ]
+            }
+        ],
+        // locales: {
+        //     '/': {
+        //         label: '11111111',
+        //         sidebar: {
+        //             '/learn/': [
+        //                 {
+        //                     title: '指南',
+        //                     collapsable: false,
+        //                     sidebarDepth: 1,
+        //                     children: [
+        //                         '../learn/',
+        //                         'http/http-link',
+        //                         'http/nginx',
+        //                         'js/webpack-splitChunks',
+        //                     ]
+        //                 },
+        //                 {
+        //                     title: '首页',
+        //                     collapsable: false,
+        //                     sidebarDepth: 0,
+        //                     children: [
+        //                         // '../learn/',
+        //                         '../daily/',
+        //                         '../work/',
+        //                     ]
+        //                 }
+        //             ]
+        //         }
+        //     }
+        // }
     }
 }
