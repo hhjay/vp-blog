@@ -1,8 +1,15 @@
-# 学习
+# 概览
 
-## 新知识
+本站是基于vuepress的个人博客，这里记录了自己的学习路径，希望可以通过这里记录下自己的技术成长 & 学习新知识。
 
-## 新技能
-
-## 学习链接
-- [20191230](./20191230)
+- http
+    - [http-link](./http-link.md)
+    - [nginx]()
+- css/less/sass
+- html
+- JavaScript / TypeScript
+    - webpack
+        - [webpack-splitChunks](./js-webpack-splitChunks.md)
+- 框架
+    - Vue
+    - jQuery

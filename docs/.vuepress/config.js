@@ -46,6 +46,7 @@ module.exports = {
                     '/learn/',
                     '/learn/http-link.md',
                     '/learn/http-nginx.md',
+                    '/learn/js-webpack-build.md',
                     '/learn/js-webpack-splitChunks.md',
                 ]
             }
