@@ -13,3 +13,5 @@
 - 框架
     - Vue
     - jQuery
+- 源码解析（手动解析ES的一些功能）
+    - JSON.parse()

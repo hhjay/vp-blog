@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="test"></div>
+
+        <input class="test1" type="text" name="" id="">
+    </body>
+    <script>
+        var obr = new MutationObserver(function(mutation, observe){
+            // mutation 变化的整个过程列表
+            // observe 当前的observe对象
+            console.log(111, mutation, observe) ;
+        });
+        let dom = document.querySelector('.test1');
+
+        console.log(22, dom, obr);
+        obr.observe(dom, {
+            childList: true,
+            characterData: true,
+            attributes: true,
+        })
+
+        // setTimeout(()=>{
+        //     document.querySelector('.test').innerHTML = '111111111'
+        //     document.querySelector('.test').setAttribute('data-s', 11111);
+        //     document.querySelector('.test').setAttribute('data-s', 22222);
+        //     document.querySelector('.test').setAttribute('data-s', 33333);
+        // }, 2000)
+    </script>
+</html>
